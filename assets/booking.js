@@ -39,7 +39,7 @@
       const label=document.createElement('label'); label.textContent='兒童 '+(i+1)+' 年齡';
       const select=document.createElement('select'); select.name='age'; select.required=true;
       select.add(new Option('請選擇年齡',''));
-      for(let n=0;n<18;n++) select.add(new Option(n+' 歲',String(n)));
+      for(let n=0;n<12;n++) select.add(new Option(n+' 歲',String(n)));
       select.value=old[i]||'';label.append(select); ages.append(label);
     } update();
   });
